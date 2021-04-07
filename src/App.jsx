@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import Hello from "./Hello";
+import Footer from "./Footer";
+import Header from "./Header";
 
-const App =() => {
+const App = () => {
   return (
-   <h1>
-     Hello World 
-   </h1>
+    <>
+      <Header />
+      <Hello />
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
