@@ -61,6 +61,6 @@ describe("back to My Portfolio/Hello tab and it", () => {
   });
 
   it("does not display My Projects header", () => {
-    cy.get("#projects-header").should(not.exist);
+    cy.get("#projects-header").should('not.exist');
   });
 });
