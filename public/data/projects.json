@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "My First Project",
+    "image": "https://venturebeat.com/wp-content/uploads/2012/02/contacts.jpg?fit=400%2C402&strip=all",
+    "description": "My first major project included creating a website where you can store contact information" 
+  },
+  {
+    "id": 2,
+    "name": "FizzBuzz",
+    "image": "https://image.slidesharecdn.com/20101125-ocp-xpday-101129162801-phpapp02/95/the-openclosed-principle-dojo-2-638.jpg?cb=1422641239",
+    "description": "One of the first things we did with Ruby was to create the FizzBuzz game"
+  },
+  {
+    "id": 3,
+    "name": "Future Projects",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_CsA095okPQwPCMI586IrC4gbv3VmU1oa5g&usqp=CAU",
+    "description": "Right now I am still learning the capabilities of the different languages that I am learning, but I am looking foward to what I can do with them once I am done."
+  }
+]
