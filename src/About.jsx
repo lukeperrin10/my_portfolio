@@ -1,25 +1,38 @@
-import React from "react";
-import { Container } from "semantic-ui-react";
-
-const About = () => {
-  return (
-    <Container>
-      <h1 id="about-header">About Me</h1>
-      <p>
-        I'm Luke, I am a Swedish guy that used to be Welsh. I moved to Sweden in
-        2010 and haven't really looked back. I live in Stockholm with my partner
-        and our young son. Recently I decided on a career change and wanted to
-        move in to something that has always been an interes, working with
-        computers. Now with no experience or knowledge in coding bar a some half
-        worked through Udemy courses I signed up for a Fullstack devleoper
-        course at Craft Academy. And started my three month intensive journey to
-        become a web developer.
-      </p>
-    </Container>
-  );
-};
+import React, { Component } from "react";
+import { Container, Grid } from "semantic-ui-react";
+import ProjectCard from "./AboutCard";
+import axios from "axios";
 
 
+class About extends Component {
+  state = {
+    about: [],
+  }
+    componentDidMount() {
+    axios.get("./data/about.json").then((response) => {
+      this.setState({ about: response.data})
+    })
+  }
 
+
+  render() {
+    const { about } = this.state;
+
+    let aboutList = about.map((about) => {
+      return (
+        <div id={`about-${about.id}`} key={about.id}>
+          <ProjectCard about={about} />
+        </div>
+      );
+    });
+
+    return (
+      <Container>
+        <h1 id="about-header">About Me</h1>
+        <Grid>{aboutList}</Grid>
+      </Container>
+    );
+  }
+}
 
 export default About;
