@@ -42,4 +42,17 @@ describe("User can navigate to CV page", () => {
         );
       };
   });
+
+  it("User can see CV information for Education"),
+    () => {
+      cy.get("#education1").should(
+        "contain",
+        "Craft Academy | 2021 | Fullstack Developer"
+      );
+      cy.get("#education2").should(
+        "contain",
+        "Hermods Komvux | 2015-2018 | Economy Line"
+      );
+      cy.get('#extraeducation').should('contain', 'Udemy | 2020 - | C++')
+    };
 });
