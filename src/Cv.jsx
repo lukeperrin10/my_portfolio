@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
-import { Container, Grid } from "semantic-ui-react";
+import { Container, Grid, Header } from "semantic-ui-react";
 import CvContainer from "./CvContainer";
 
 class Cv extends Component {
@@ -8,7 +8,7 @@ class Cv extends Component {
     cv: [],
   };
   componentDidMount() {
-    axios.get("./data/cv.json").then((response) => {
+    axios.get("./data/cvjobs.json").then((response) => {
       this.setState({ cv: response.data });
     });
   }
@@ -25,7 +25,20 @@ class Cv extends Component {
     });
 
     return (
+      
       <Container>
+         <Grid celled>
+      <Grid.Row>
+        <Grid.Column width={3}>
+          <img id="luke-cv-img" src={('./data/me.jpg')} />
+        </Grid.Column>
+        <Grid.Column width={13}>
+          <Header id="header-cv">Luke Perrin</Header>
+          <h5 id="cv-occupation">Aspiring Fullstack Developer</h5>
+        </Grid.Column>
+      </Grid.Row>
+      </Grid>
+      <h3 id="cv-experience">Experience</h3> 
         <Grid>{cvInfo}</Grid>
       </Container>
     )
