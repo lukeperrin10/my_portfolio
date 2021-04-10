@@ -1,13 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Luke Perrin",
-    "image": "/data/me.jpg",
-    "occupation": "Aspiring FullStack Developer",
-    "experience": "This is just example text for testing",
-    "education": "Examples of my education",
-    "extrainformation": "Some extra information",
-    "interests": "A list of my interests"
+    "company": "Alstom Transport AB"
   }
 ]
   
