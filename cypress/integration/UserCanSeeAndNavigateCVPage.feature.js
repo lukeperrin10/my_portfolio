@@ -4,26 +4,42 @@ describe("User can navigate to CV page", () => {
     cy.get("#CV-tab").click();
   });
 
-  it("User can see CV information on page", () => {
+  it("User can see CV information for first job on page", () => {
     cy.get("#header-cv").should("contain", "Luke Perrin");
     cy.get("#luke-cv-img").should("exist");
     cy.get("#cv-occupation").should("contain", "Aspiring Fullstack Developer");
     cy.get("#cv-actual").within(() => {
-      cy.get("#cv-experience").within(() => {
-        cy.get("#job1").should("contain", "My latest job");
-        cy.get("#job2").should("contain", "My previous job");
-        cy.get("#job3").should("contain", "My job before my previous job");
-      });
-      cy.get("#cv-education").within(() => {
-        cy.get("#education1").should("contain", "My latest education");
-        cy.get("education2").should("contain", "My previous education");
-      });
-
-      cy.get("#cv-extra-information").should(
+      cy.get("#cv-experience").should("contain", "Experience");
+      cy.get("#job1").should(
         "contain",
-        "Some extra information"
+        "Alstom Transport AB | 2019-2021 | Sourcing Buyer"
       );
-      cy.get("#cv-interests").should("contain", "A list of my interests");
+      cy.get("#description").should(
+        "contain",
+        "Responsible for purchase and sourcing activites for Parts Buisness Nordic, handling negotiations of prices and deliveries."
+      );
     });
+    it("User can see CV information for second job on page"),
+      () => {
+        cy.get("#job2").should(
+          "contain",
+          "Alstom Transport | AB 2017-2019 | Repair Controller"
+        );
+        cy.get("#description2").should(
+          "contain",
+          "Responsible for all Warranty material used in connection to X60B Stockholm Commuter trains during warranty period"
+        );
+      };
+    it("User can see CV information about third job"),
+      () => {
+        cy.get("#job3").should(
+          "contain",
+          "Warehouse Operator | Studentconsulting | 2016-2017"
+        );
+        cy.get("#description3").should(
+          "contain",
+          "Responsible for picking and packing orders for both private customers and enterprises."
+        );
+      };
   });
 });
