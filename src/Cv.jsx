@@ -25,23 +25,22 @@ class Cv extends Component {
     });
 
     return (
-      
       <Container>
-         <Grid celled>
-      <Grid.Row>
-        <Grid.Column width={3}>
-          <img id="luke-cv-img" src={('./data/me.jpg')} />
-        </Grid.Column>
-        <Grid.Column width={13}>
-          <Header id="header-cv">Luke Perrin</Header>
-          <h5 id="cv-occupation">Aspiring Fullstack Developer</h5>
-        </Grid.Column>
-      </Grid.Row>
-      </Grid>
-      <h3 id="cv-experience">Experience</h3> 
+        <Grid celled>
+          <Grid.Row>
+            <Grid.Column width={3}>
+              <img id="luke-cv-img" src={"./data/me.jpg"} alt="Luke" />
+            </Grid.Column>
+            <Grid.Column width={13}>
+              <Header id="header-cv">Luke Perrin</Header>
+              <h5 id="cv-occupation">Aspiring Fullstack Developer</h5>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        <h3 id="cv-experience">Experience</h3>
         <Grid>{cvInfo}</Grid>
       </Container>
-    )
+    );
   }
 }
 
