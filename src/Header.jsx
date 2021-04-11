@@ -5,7 +5,7 @@ import { NavLink, Link } from "react-router-dom";
 const Header = () => {
   return (
     <Segment inverted>
-      <Menu inverted secondary>
+      <Menu inverted pointing>
         <Menu.Item
           id="header"
           name="My Portfolio"
@@ -24,6 +24,13 @@ const Header = () => {
           as={NavLink}
           to={{ pathname: "/projects" }}
         />
+        <Menu.Item
+        id='CV-tab'
+        name='My CV'
+        as={NavLink}
+        to={{pathname: '/CV'}}
+        />
+        
       </Menu>
     </Segment>
   );
