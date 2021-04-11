@@ -4,17 +4,15 @@ import ProjectCard from "./AboutCard";
 import axios from "axios";
 import UndrawCoding from "react-undraw-illustrations/lib/components/UndrawCoding";
 
-
 class About extends Component {
   state = {
     about: [],
-  }
-    componentDidMount() {
+  };
+  componentDidMount() {
     axios.get("./data/about.json").then((response) => {
-      this.setState({ about: response.data})
-    })
+      this.setState({ about: response.data });
+    });
   }
-
 
   render() {
     const { about } = this.state;
