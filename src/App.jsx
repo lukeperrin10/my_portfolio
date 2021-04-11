@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import About from "./About";
 import Projects from "./Projects";
-import CV from "./Cv"
+import CV from "./Cv";
 import { Switch, Route } from "react-router-dom";
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
         <Route exact path="/CV" component={CV}></Route>
         <Hello />
       </Switch>
+
       <Footer />
     </>
   );

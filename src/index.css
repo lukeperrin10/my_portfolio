@@ -29,3 +29,8 @@ footer {
 .container {
   margin-top: 4em;
 }
+
+.homepage {
+  background-size: auto;
+  background-position: top left;
+}
