@@ -9,7 +9,7 @@ const Hello = () => {
       <Helmet><style>{'body {background-color: lightgrey;}'}</style></Helmet>
       <h1 id="hello">Hi and welcome to my portfolio</h1>
       <p>
-        This is an ongoing site that will be update regulary so stick aruond and
+        This is an ongoing site that will be update regulary so stick around and
         see what happens!
       </p>
     </Container>
