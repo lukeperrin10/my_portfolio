@@ -8,7 +8,7 @@ class Cv extends Component {
     cv: [],
   };
   componentDidMount() {
-    axios.get("./data/cvjobs.json").then((response) => {
+    axios.get("./data/cv.json").then((response) => {
       this.setState({ cv: response.data });
     });
   }
@@ -18,7 +18,7 @@ class Cv extends Component {
 
     let cvInfo = cv.map((cv) => {
       return (
-        <div id={`{cv-${cv.id}`} key={cv.id}>
+        <div id={`cv-${cv.id}`} key={cv.id}>
           <CvContainer cv={cv} />
         </div>
       );
