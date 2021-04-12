@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import { Container, Grid} from "semantic-ui-react";
 import ProjectCard from "./AboutCard";
 import axios from "axios";
@@ -25,7 +26,9 @@ class About extends Component {
     });
 
     return (
+     
       <Container>
+        <Helmet><style>{'body {background-color: lightgrey;}'}</style></Helmet>
         <h1 id="about-header">About Me</h1>
         <Grid>{aboutList}</Grid>
       </Container>

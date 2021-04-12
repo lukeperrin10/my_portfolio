@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import {
   Card,
   CardContent,
@@ -9,6 +10,8 @@ import {
 
 const ProjectCard = ({ project }) => {
   return (
+    <div>
+      <Helmet><style>{'body {background-color: lightgrey;}'}</style></Helmet>
     <Card>
       <Image src={project.image} wrapped ui={false} />
       <CardContent>
@@ -16,6 +19,7 @@ const ProjectCard = ({ project }) => {
         <CardDescription>{project.description}</CardDescription>
       </CardContent>
     </Card>
+    </div>
   );
 };
 

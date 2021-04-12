@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "company": "Alstom Transport AB",
+    "year": " 2019-2021 ",
+    "jobtitle": "Sourcing Buyer",
+    "responsibilities": "Responsible for purchase and sourcing activites for Parts Buisness Nordic, handling negotiations of prices and deliveries."
+
+  },
+  {
+    "id": "2",
+    "company": "Alstom Transport AB ",
+    "year": "2017-2019 ",
+    "jobtitle": "Repair Controller",
+    "responsibilities": "Resposonible for all warranty material for X60B Stockholm commuter trains delivery project."
+  },
+  {
+    "id": "3",
+    "company": "Craft Academy 2021-2021 Fullstack Developer",
+    "responsibilities": "3 month intensive course to develop the skills to be a junior fullstack developer"
+  }
+]
+  

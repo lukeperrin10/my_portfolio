@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import { Container, Grid, Header } from "semantic-ui-react";
 import CvContainer from "./CvContainer";
 
@@ -26,6 +27,7 @@ class Cv extends Component {
 
     return (
       <Container>
+        <Helmet><style>{'body {background-color: lightgrey;}'}</style></Helmet>
         <Grid celled>
           <Grid.Row>
             <Grid.Column width={3}>
