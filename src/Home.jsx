@@ -2,9 +2,12 @@ import React from "react";
 import { Container } from "semantic-ui-react";
 import { Helmet } from "react-helmet";
 import "./index.css";
-import ReactTwitchEmbedVideo from 'react-twitch-embed-video'
-
-
+import {
+  TwitchPlayer,
+  TwitchChat,
+  TwitchEmbed,
+  TwitchClip,
+} from "react-twitch-embed";
 
 const Hello = () => {
   return (
@@ -19,7 +22,12 @@ const Hello = () => {
       </p>
 
       <div>
-        <ReactTwitchEmbedVideo channel="https://www.twitch.tv/welshthor"  />
+        <Container>
+          <TwitchPlayer id="twitchstream" channel="welshthor" theme="dark" />
+        </Container>
+        <Container>
+          <TwitchChat id="twitchchat" channel="welshthor" theme="dark" />
+        </Container>
       </div>
     </Container>
   );
