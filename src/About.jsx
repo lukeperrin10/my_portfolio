@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import { Container, Grid} from "semantic-ui-react";
-import ProjectCard from "./AboutCard";
+import ProjectCard from "./components/AboutCard";
 import axios from "axios";
 
 class About extends Component {

@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import { Container, Grid, Header } from "semantic-ui-react";
-import CvContainer from "./CvContainer";
+import CvContainer from "./components/CvContainer";
 
 class Cv extends Component {
   state = {
