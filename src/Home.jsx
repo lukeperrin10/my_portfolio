@@ -5,8 +5,6 @@ import "./index.css";
 import {
   TwitchPlayer,
   TwitchChat,
-  TwitchEmbed,
-  TwitchClip,
 } from "react-twitch-embed";
 
 const Hello = () => {
