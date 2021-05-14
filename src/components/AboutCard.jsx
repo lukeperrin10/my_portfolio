@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   Image,
-} from "semantic-ui-react";
+} from 'semantic-ui-react';
 
 const AboutCard = ({ about }) => {
   return (
